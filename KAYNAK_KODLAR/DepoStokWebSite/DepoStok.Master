@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DepoStok.Master.cs" Inherits="DepoStokWebSite.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>DepoStok</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Yazılım,Depo,Stok,Program,Otomasyon" />
+    <meta name="author" content="Aysu ATICIOĞLU" />
+    <meta name="description" content="Depo Stok Programı" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/animate.css">
+    <link rel="stylesheet" href="../Assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../Assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../Assets/css/aos.css">
+    <link rel="stylesheet" href="../Assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="../Assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../Assets/css/jquery.timepicker.css">
+    <link href="../Assets/fonts/flaticon/font/flaticon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Assets/css/icomoon.css">
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="Default.aspx">Depo Stok</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="oi oi-menu"></span>Menu
+	     
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="ftco-nav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a href="Default2.aspx" class="nav-link">Anasayfa</a></li>
+                            <li class="nav-item"><a href="Hakkimizda.aspx" class="nav-link">Hakkımızda</a></li>
+                            <li class="nav-item"><a href="Iletisim.aspx" class="nav-link">İletişim</a></li>
+                            <li class="nav-item cta"><a href="UyeGiris.aspx" id="Link" class="nav-link" runat="server"><span>
+                                <asp:Label ID="UyeAd" runat="server" Text="Üye Girişi"></asp:Label></span></a></li>
+                            <li class="nav-item cta user-img mb-10">
+                                <asp:Image ID="UyeResim" runat="server" class="rounded-circle  shadow" Style="margin-left: 15px" Width="50" Height="50" alt="Alternate Text" />
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer class="ftco-footer ftco-bg-dark ftco-section">
+            <div class="container">
+                <div class="row mb-6">
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Depo Stok</h2>
+                        
+                            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">WebHost</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="Default2.aspx" class="py-2 d-block">Anasayfa</a></li>
+                                <li><a href="Hakkimizda.aspx" class="py-2 d-block">Hakkımızda</a></li>
+                                <li><a href="Iletisim.aspx" class="py-2 d-block">İletişim</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">WebHost</h2>
+                            <div class="block-23 mb-3">
+                                <ul>
+                                    <li><span class="icon icon-map-marker"></span><span class="text">42. Cad. No:20, Başkent OSB, 06909 Sincan/Ankara</span></li>
+                                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">(0312) 123 45 67</span></a></li>
+                                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">komunikasyonlar@gmail.com</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i>by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="ftco-loader" class="show fullscreen">
+            <svg class="circular" width="48px" height="48px">
+                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+            </svg>
+        </div>
+
+
+        <script src="../Assets/js/jquery.min.js"></script>
+        <script src="../Assets/js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="../Assets/js/popper.min.js"></script>
+        <script src="../Assets/js/bootstrap.min.js"></script>
+        <script src="../Assets/js/jquery.easing.1.3.js"></script>
+        <script src="../Assets/js/jquery.waypoints.min.js"></script>
+        <script src="../Assets/js/jquery.stellar.min.js"></script>
+        <script src="../Assets/js/owl.carousel.min.js"></script>
+        <script src="../Assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="../Assets/js/aos.js"></script>
+        <script src="../Assets/js/jquery.animateNumber.min.js"></script>
+        <script src="../Assets/js/bootstrap-datepicker.js"></script>
+        <script src="../Assets/js/jquery.timepicker.min.js"></script>
+        <script src="../Assets/js/scrollax.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+        <script src="../Assets/js/google-map.js"></script>
+        <script src="../Assets/js/main.js"></script>
+
+    </form>
+</body>
+</html>
